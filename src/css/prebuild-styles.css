@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Open+Sans&display=swap');
+
+.logo{
+font-family: "Advent Pro";
+@apply text-gray-300 font-extrabold text-3xl;
+}
