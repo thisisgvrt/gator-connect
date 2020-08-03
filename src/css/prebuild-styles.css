@@ -1,12 +1,21 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
-
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Open+Sans&display=swap');
+.navbar-purple {
+    background-color: #532380;
+}
 
-.logo{
-font-family: "Advent Pro";
-@apply text-gray-300 font-extrabold text-3xl;
+.logo {
+    font-family: "Advent Pro";
+    color: #FFCF06;
+    @apply font-extrabold text-4xl;
+}
+
+.muted-highlight-color{
+    color: #C99700;
+}
+.search-logo {
+    color: #C99700;
+    @apply pb-1;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,13 +14,21 @@ import CalendarScreen from './sections/calendar';
 import MessageScreen from './sections/messages';
 import NotificationScreen from './sections/notifications';
 
-const homePagePath = "/";
-const memberScreenPath = "/members";
-const messageScreenPath = "/messages";
-const calendarScreenPath = "/calendar";
-const notificationScreenPath = "/notifications";
+import { paths } from './data';
+
+const {
+  homePagePath,
+  membersWithTeamsPath,
+  membersWithoutTeamsPath,
+  messageScreenPath,
+  calendarScreenPath,
+  notificationScreenPath
+} = paths;
 
 function App() {
+
+  const [searchText, setSearchText] = useState(null);
+
   return (
     <Router>
       {/*  
@@ -33,8 +41,18 @@ function App() {
         {/* 
           Header will be containing the logo.
         */}
-        <header className="bg-gray-900 px-2">
-          <h4 className="logo align-bottom leading-tight">GatorConnect</h4>
+        <header className="navbar-purple px-2 flex flex-row justify-between items-end">
+          {
+            searchText === null ? <><h4 className="logo align-bottom leading-tight tracking-wide">GatorConnect</h4><svg fill="currentColor" className="h-8 w-8 search-logo" viewBox="0 0 20 20" onClick={() => setSearchText("")}><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg></>
+              : <form class="w-full max-w-sm">
+                <div class="flex items-end py-1">
+                  <input class="appearance-none muted-highlight-color bg-transparent border-none w-full mr-3 py-1 px-2 leading-none focus:outline-none text-xl" type="text" placeholder="Please enter enter the search text" aria-label="Search Text" onChange={e => setSearchText(e.target.value)} value={searchText}/>
+                  <button class="flex-shrink-0 border-none text-gray-300 text-xl font-extrabold py-1 muted-highlight-color" type="button" onClick={() => setSearchText(null)}>
+                    X
+                  </button>
+                </div>
+              </form>
+          }
         </header>
         {/* 
           Section will contain the main content.
@@ -47,8 +65,11 @@ function App() {
             <Route exact path={homePagePath}>
               <HomepageScreen />
             </Route>
-            <Route path={memberScreenPath}>
-              <MemberScreen />
+            <Route path={membersWithTeamsPath}>
+              <MemberScreen classHasTeams={true}/>
+            </Route>
+            <Route path={membersWithoutTeamsPath}>
+              <MemberScreen classHasTeams={false}/>
             </Route>
             <Route path={messageScreenPath}>
               <MessageScreen />
@@ -64,7 +85,7 @@ function App() {
         {/* 
           Footer will be containing the main navigation icons.
         */}
-        <footer className="bg-gray-900">
+        <footer className="navbar-purple">
           {/* 
             For the next section, we have the change the flex direction to horizontal.
             So, `flex flex-row` are the two classes that will make it happen.
