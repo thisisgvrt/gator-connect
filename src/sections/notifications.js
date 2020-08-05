@@ -50,7 +50,7 @@ function NotificationScreen() {
       </Link>
                             </div>
                             <div class="text-sm text-gray-500">
-                                <p>x</p>
+                              
                             </div>
                         </div>
                     </div>
@@ -70,19 +70,19 @@ function NotificationScreen() {
       </Link>
                         </div>
                         <div class="text-sm text-gray-500">
-                            <p>x</p>
+                           
                         </div>
                     </div>
                 </div>
                 <p>
             
 
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample" >
                 Expand
 </button>
   
 </p>
-<div class="collapse" id="collapseExample">
+<div class="collapse" id="collapseOne">
   <div class="card card-body">
     
   <div class="flex bg-blue-200 p-4 mt-1 rounded-lg">
@@ -99,7 +99,7 @@ function NotificationScreen() {
       </Link>
                          </div>
                          <div class="text-sm text-gray-500">
-                             <p>x</p>
+                           
                          </div>
                      </div>
                  </div>
@@ -158,12 +158,12 @@ function NotificationScreen() {
       </p>
       <Link to={ eventsOverviewScreenPath}>
                             <p class="text-xs">
-                                J. Leonard Library @ 9:30 aM
+                                J. Leonard Library @ 9:30 AM
       </p>
       </Link>
                         </div>
                         <div class="text-sm text-gray-500">
-                            <span>x</span>
+                       
                         </div>
                     </div>
                 </div>
@@ -176,12 +176,14 @@ function NotificationScreen() {
                             <p class="mb-2 font-bold">
                                 Today: Gator Groceries
       </p>
+      <Link to={ eventsOverviewScreenPath}>
                             <p class="text-xs">
-                                <a>J. Leonard Library @ 2:00 PM</a>
+                                J. Leonard Library @ 2:00 PM
       </p>
+      </Link>
                         </div>
                         <div class="text-sm text-gray-500">
-                            <span>x</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -211,12 +213,14 @@ function NotificationScreen() {
                            <p class="mb-2 font-bold">
                                Today: Gator Groceries
  </p>
-                           <p class="text-xs">
-                           <a>Bookstore @ 9:00 PM</a>
- </p>
+ <Link to={ eventsOverviewScreenPath}>
+                            <p class="text-xs">
+                                Bookstore @ 9:00 PM
+      </p>
+      </Link>
                        </div>
                        <div class="text-sm text-gray-500">
-                           <p>x</p>
+                        
                        </div>
                    </div>
                </div>
