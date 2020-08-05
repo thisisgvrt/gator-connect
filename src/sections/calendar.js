@@ -10,9 +10,9 @@ function CalendarScreen(){
 </head>
 <body>
 
-<span class="day">24
+<span class="day">03
 </span>
-<span class="date">June 2020
+<span class="date">August 2020
 </span>
          
 <div class="YourEventsBox">
