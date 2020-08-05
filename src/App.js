@@ -43,11 +43,11 @@ function App() {
         */}
         <header className="navbar-purple px-2 flex flex-row justify-between items-end">
           {
-            searchText === null ? <><h4 className="logo align-bottom leading-tight tracking-wide">GatorConnect</h4><svg fill="currentColor" className="h-8 w-8 search-logo" viewBox="0 0 20 20" onClick={() => setSearchText("")}><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg></>
-              : <form class="w-full max-w-sm">
-                <div class="flex items-end py-1">
-                  <input class="appearance-none muted-highlight-color bg-transparent border-none w-full mr-3 py-1 px-2 leading-none focus:outline-none text-xl" type="text" placeholder="Please enter enter the search text" aria-label="Search Text" onChange={e => setSearchText(e.target.value)} value={searchText}/>
-                  <button class="flex-shrink-0 border-none text-gray-300 text-xl font-extrabold py-1 muted-highlight-color" type="button" onClick={() => setSearchText(null)}>
+            searchText === null ? <div className="w-full flex flex-row justify-between items-end"><h4 className="logo text-4xl align-bottom leading-tight tracking-wide">GatorConnect</h4><svg fill="currentColor" className="h-10 w-10 search-logo" viewBox="0 0 20 20" onClick={() => setSearchText("")}><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" /></svg></div>
+              : <form className="w-full max-w-sm">
+                <div className="flex items-end py-1">
+                  <input className="appearance-none muted-highlight-color bg-transparent border-none w-full mr-3 py-1 px-2 leading-none focus:outline-none text-xl" type="text" placeholder="Please enter enter the search text" aria-label="Search Text" onChange={e => setSearchText(e.target.value)} value={searchText}/>
+                  <button className="flex-shrink-0 border-none text-gray-300 text-xl font-extrabold py-1 muted-highlight-color" type="button" onClick={() => setSearchText(null)}>
                     X
                   </button>
                 </div>
@@ -60,16 +60,16 @@ function App() {
           show the logo and icons - so they take very little vertical space.
           flex-grow will make this section to occupy all the available space.
         */}
-        <section className="flex-grow">
+        <section className="flex-grow overflow-y-auto">
           <Switch>
             <Route exact path={homePagePath}>
-              <HomepageScreen />
+              <HomepageScreen searchText={searchText}/>
             </Route>
             <Route path={membersWithTeamsPath}>
-              <MemberScreen classHasTeams={true}/>
+              <MemberScreen classHasTeams={true} searchText={searchText}/>
             </Route>
             <Route path={membersWithoutTeamsPath}>
-              <MemberScreen classHasTeams={false}/>
+              <MemberScreen classHasTeams={false} searchText={searchText}/>
             </Route>
             <Route path={messageScreenPath}>
               <MessageScreen />
@@ -92,16 +92,16 @@ function App() {
           */}
           <div className="text-gray-200 flex flex-row justify-around">
             <Link to={homePagePath}>
-              <svg className="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+              <svg className="h-16 w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
             </Link>
             <Link to={messageScreenPath}>
-              <svg className="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" /></svg>
+              <svg className="h-16 w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" /></svg>
             </Link>
             <Link to={calendarScreenPath}>
-              <svg className="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" /></svg>
+              <svg className="h-16 w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" /></svg>
             </Link>
             <Link to={notificationScreenPath}>
-              <svg className="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" /></svg>
+              <svg className="h-16 w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" /></svg>
             </Link>
           </div>
         </footer>

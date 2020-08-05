@@ -2,20 +2,38 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Open+Sans&display=swap');
+
 .navbar-purple {
     background-color: #532380;
+}
+
+body {
+    font-family: "Open Sans";
 }
 
 .logo {
     font-family: "Advent Pro";
     color: #FFCF06;
-    @apply font-extrabold text-4xl;
+    @apply font-extrabold text-5xl;
 }
 
-.muted-highlight-color{
+.muted-highlight-color {
     color: #C99700;
 }
+
 .search-logo {
     color: #C99700;
     @apply pb-1;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-700;
 }
