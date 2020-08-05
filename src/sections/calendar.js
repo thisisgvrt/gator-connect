@@ -17,7 +17,7 @@ function CalendarScreen() {
             </head>
             <body>
 
-                </span> <pre style={{ color : " rgba(83,35,128,1)","margin-top": "-45px","font-weight":"bold","font-size": "36px", "font-family": "roboto" }}>{`
+            <span class="day">4 </span> <pre style={{ color : " rgba(83,35,128,1)","margin-top": "-45px","font-weight":"bold","font-size": "36px", "font-family": "roboto" }}>{`
          August 
           2020
                             `}</pre>
