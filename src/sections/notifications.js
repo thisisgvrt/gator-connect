@@ -1,4 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import{ paths } from '../data';
+
+const{
+    messageScreenPath,
+    eventsOverviewScreenPath
+
+} = paths;
 
 /* Tania */
 function NotificationScreen() {
@@ -33,11 +41,13 @@ function NotificationScreen() {
                         <div class="flex justify-between w-full">
                             <div class="text-blue-600">
                                 <p class="mb-2 font-bold">
-                                    SFSU Student Government posted an update
+                                    Unread message from Jane
       </p>
-                                <p class="text-xs">
-                                    <a>Click to view</a>
+      <Link to={ messageScreenPath}>
+                            <p class="text-xs">
+                                Click to View
       </p>
+      </Link>
                             </div>
                             <div class="text-sm text-gray-500">
                                 <p>x</p>
@@ -51,11 +61,13 @@ function NotificationScreen() {
                     <div class="flex justify-between w-full">
                         <div class="text-blue-600">
                             <p class="mb-2 font-bold">
-                                Event Milk and Bookies date and time was changed by host
+                                Unread Message from Chris
       </p>
+                        <Link to={ messageScreenPath}>
                             <p class="text-xs">
-                                Now 9/3/2020 @ 5:30 PM
+                                Click to View
       </p>
+      </Link>
                         </div>
                         <div class="text-sm text-gray-500">
                             <p>x</p>
@@ -63,6 +75,7 @@ function NotificationScreen() {
                     </div>
                 </div>
                 <p>
+            
 
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
                 Expand
@@ -77,11 +90,13 @@ function NotificationScreen() {
                      <div class="flex justify-between w-full">
                          <div class="text-blue-600">
                              <p class="mb-2 font-bold">
-                                 Pending Invitation to join SFSU CS Club Group
+                                 Unread Message from Jacky
    </p>
-                             <p class="text-xs">
-                                 <a>Accept/Decline</a>
-   </p>
+   <Link to={ messageScreenPath}>
+                            <p class="text-xs">
+                                Click to View
+      </p>
+      </Link>
                          </div>
                          <div class="text-sm text-gray-500">
                              <p>x</p>
@@ -139,11 +154,13 @@ function NotificationScreen() {
                     <div class="flex justify-between w-full">
                         <div class="text-orange-600">
                             <p class="mb-2 font-bold">
-                                Today: Resume Builder Workshop
+                                Today: Microbiology Study Group
       </p>
+      <Link to={ eventsOverviewScreenPath}>
                             <p class="text-xs">
-                                <a>J. Leonard Library @ 1:15 PM</a>
+                                J. Leonard Library @ 9:30 aM
       </p>
+      </Link>
                         </div>
                         <div class="text-sm text-gray-500">
                             <span>x</span>
@@ -157,10 +174,10 @@ function NotificationScreen() {
                     <div class="flex justify-between w-full">
                         <div class="text-orange-600">
                             <p class="mb-2 font-bold">
-                                Today: Microbiology Study Group
+                                Today: Gator Groceries
       </p>
                             <p class="text-xs">
-                                <a>Thornton Hall 220 @ 5:00 PM</a>
+                                <a>J. Leonard Library @ 2:00 PM</a>
       </p>
                         </div>
                         <div class="text-sm text-gray-500">
@@ -192,10 +209,10 @@ function NotificationScreen() {
                    <div class="flex justify-between w-full">
                        <div class="text-orange-600">
                            <p class="mb-2 font-bold">
-                               Pending Invitation to join SFSU CS Club Group
+                               Today: Gator Groceries
  </p>
                            <p class="text-xs">
-                           <a>Accept/Decline</a>
+                           <a>Bookstore @ 9:00 PM</a>
  </p>
                        </div>
                        <div class="text-sm text-gray-500">
