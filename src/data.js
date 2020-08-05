@@ -63,7 +63,9 @@ const membersWithoutTeams = {
 }
 
 const paths = {
-    homePagePath: "/",
+    landingPagePath: "/",
+    homePagePath: "/homePage",
+    profilePagePath:"/profile",
     messageScreenPath: "/messages",
     calendarScreenPath: "/calendar",
     eventsOverviewScreenPath: "/eventsOverview",
