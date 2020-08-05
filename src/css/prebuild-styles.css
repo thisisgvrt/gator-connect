@@ -37,3 +37,297 @@ body {
 .btn-blue:hover {
     @apply bg-blue-700;
 }
+.day {
+    width: 108px;
+    color: rgba(83,35,128,1);
+    position: absolute;
+    top: 63px;
+    left: 15px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 96px;
+    opacity: 1;
+    text-align: left;
+  }
+ 
+  .date {
+    width: 100px;
+    color: rgba(83,35,128,1);
+    position: absolute;
+    top: 77px;
+    left: 137px;
+    font-family: Roboto;
+    font-size: 36px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .YourEventsBox  {
+    width: 346px;
+    height: 245px;
+    position: absolute;
+    top: 196px;
+    left: 16px;
+  }
+  
+  .YourEventsBorder {
+    width: 340px;
+    height: 209px;
+    background-position: center center;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    border: 2px solid rgba(238,238,238,1);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    overflow: hidden;
+  }
+  
+  .YourEvents {
+    width: 129px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 12px;
+    left: 19px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .gatorBG {
+    width: 310px;
+    height: 40px;
+    background: rgba(229,229,229,0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 157px;
+    left: 19px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .GatorFestText {
+    width: 164px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    font-family: Roboto;
+    top: 165px;
+    left: 28px;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  .groceriesBG {
+    width: 310px;
+    height: 39px;
+    background: rgba(229,229,229,0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 102px;
+    left: 19px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+  }
+  .GroceriesText {
+    width: 207px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    font-family: Roboto;
+    top: 110px;
+    left: 28px;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  .studyBG {
+    width: 310px;
+    height: 33px;
+    background: rgba(229,229,229,0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 55px;
+    left: 19px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+  }
+  .studyText {
+    width: 284px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    font-family: Roboto;
+    top: 62px;
+    left: 28px;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .ClassScheduleBox {
+    width: 346px;
+    height: 245px;
+    position: absolute;
+    top: 423px;
+    left: 16px;
+  }
+  
+  .ClassScheduleBorder {
+    width: 340px;
+    height: 209px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    border: 2px solid rgba(238,238,238,1);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  
+  .ClassSched {
+    width: 178px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 12px;
+    left: 19px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+  }
+  .philBG {
+    width: 310px;
+    height: 40px;
+    background: rgba(229,229,229,0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 157px;
+    left: 19px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+  }
+  .phil {
+    width: 164px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    font-family: Roboto;
+    top: 165px;
+    left: 28px;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  .cscBG {
+    width: 310px;
+    height: 39px;
+    background: rgba(229,229,229,0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 102px;
+    left: 19px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+  }
+  .csc {
+    width: 207px;
+    position: absolute;
+    font-family: Roboto;
+    top: 110px;
+    left: 28px;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  .mathBG {
+    width: 310px;
+    height: 33px;
+    background: rgba(229,229,229,0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 55px;
+    left: 19px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+  }
+  .math {
+    width: 284px;
+    position: absolute;
+    font-family: Roboto;
+    top: 62px;
+    left: 28px;
+    font-size: 18px;
+  }
+  
+  .eventBG {
+    width: 140px;
+    height: 33px;
+    background-color: #FFCF06;
+  -webkit-box-shadow: 0px 7px 11px 1px rgba(189,189,189,1);
+  -moz-box-shadow: 0px 7px 11px 1px rgba(189,189,189,1);
+  box-shadow: 0px 7px 11px 1px rgba(189,189,189,1);
+    position: absolute;
+    top: 660px;
+    left: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .addEvent  {
+    width: 284px;
+    position: absolute;
+    font-family: Roboto;
+    top: 665px;
+    left: 32px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.viewAllBG {
+  width: 140px;
+  height: 33px;
+  background-color: #FFCF06;
+-webkit-box-shadow: 0px 7px 11px 1px rgba(189,189,189,1);
+-moz-box-shadow: 0px 7px 11px 1px rgba(189,189,189,1);
+box-shadow: 0px 7px 11px 1px rgba(189,189,189,1);
+  position: absolute;
+  top: 660px;
+  left: 221px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.viewAll  {
+  width: 284px;
+  position: absolute;
+  font-family: Roboto;
+  top: 665px;
+  left: 232px;
+  font-size: 18px;
+  text-align: left;
+  }
