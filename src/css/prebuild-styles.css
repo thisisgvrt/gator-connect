@@ -19,3 +19,10 @@
     color: #C99700;
     @apply pb-1;
 }
+.collapse:not(.show) {
+      display: none;
+    }
+
+.show {
+    visibility: block;
+}

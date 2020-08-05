@@ -14464,6 +14464,14 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.collapse:not(.show) {
+  display: none;
+}
+
+.show {
+  visibility: block;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
