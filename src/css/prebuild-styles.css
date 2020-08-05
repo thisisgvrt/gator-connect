@@ -331,3 +331,10 @@ box-shadow: 0px 7px 11px 1px rgba(189,189,189,1);
   font-size: 18px;
   text-align: left;
   }
+.collapse:not(.show) {
+      display: none;
+    }
+
+.show {
+    visibility: block;
+}

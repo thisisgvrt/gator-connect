@@ -14793,6 +14793,14 @@ body {
   text-align: left;
 }
 
+.collapse:not(.show) {
+  display: none;
+}
+
+.show {
+  visibility: block;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
