@@ -1,9 +1,9 @@
 const membersWithTeams = {
-    "Class title": "Human Computer Interaction",
+    "Class title": "A.I Ethics",
     "teams": [
         {
             "Team Lead": "John Doe",
-            "Members": [
+            "members": [
                 "Jenny Smith",
                 "Anna Ward",
                 "Sahib Rose"
@@ -63,16 +63,102 @@ const membersWithoutTeams = {
 }
 
 const paths = {
-    homePagePath: "/",
+    landingPagePath: "/",
+    homePagePath: "/homePage",
+    profilePagePath:"/profile",
     messageScreenPath: "/messages",
     calendarScreenPath: "/calendar",
+    eventsOverviewScreenPath: "/eventsOverview",
     notificationScreenPath: "/notifications",
     membersWithTeamsPath: "/membersWithTeamsPath",
     membersWithoutTeamsPath: "/membersWithoutTeamsPath"
 }
 
+const semestersData = [
+    {
+        "Name of the Semester": "Summer 2020 (Current Semester)",
+        "Classes":[
+            {
+                "Class Name": "Human Computer Interaction"
+            },
+            {
+                "Class Name": "Software Engineering"
+            }
+        ]
+    },
+    {
+        "Name of the Semester": "Spring 2020",
+        "Classes":[
+            {
+                "Class Name": "Explainable Artifical Intelligence"
+            },
+            {
+                "Class Name": "User Centered Design"
+            },
+            {
+                "Class Name": "Ethics in Artificial Intelligence"
+            },
+            {
+                "Class Name": "Machine learning"
+            }
+        ]
+    },
+    {
+        "Name of the Semester": "Fall 2019",
+        "Classes":[
+            {
+                "Class Name": "Machine learning"
+            },
+            {
+                "Class Name": "User Centered Design"
+            },
+            {
+                "Class Name": "Explainable Artifical Intelligence"
+            },
+            {
+                "Class Name": "Ethics in Artificial Intelligence"
+            }
+        ]
+    },
+    {
+        "Name of the Semester": "Spring 2019",
+        "Classes":[
+            {
+                "Class Name": "Machine learning"
+            },
+            {
+                "Class Name": "User Centered Design"
+            },
+            {
+                "Class Name": "Explainable Artifical Intelligence"
+            },
+            {
+                "Class Name": "Ethics in Artificial Intelligence"
+            }
+        ]
+    },
+    {
+        "Name of the Semester": "Fall 2018",
+        "Classes":[
+            {
+                "Class Name": "Machine learning"
+            },
+            {
+                "Class Name": "User Centered Design"
+            },
+            {
+                "Class Name": "Explainable Artifical Intelligence"
+            },
+            {
+                "Class Name": "Ethics in Artificial Intelligence"
+            }
+        ]
+    }
+]
+
 module.exports = {
     membersWithTeams,
     membersWithoutTeams,
-    paths
+    paths,
+    semestersData
 }
