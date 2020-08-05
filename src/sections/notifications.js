@@ -36,7 +36,7 @@ function NotificationScreen() {
                                     SFSU Student Government posted an update
       </p>
                                 <p class="text-xs">
-                                    Click to view
+                                    <a>Click to view</a>
       </p>
                             </div>
                             <div class="text-sm text-gray-500">
@@ -64,13 +64,10 @@ function NotificationScreen() {
                 </div>
                 <p>
 
-  <button class="bg-blue-500"  type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class ="rounded-lg">
-    <div class = "border-solid border-8 border-blue-500 rounded-lg">
-      <div class ="text-blue-300">
-        Click to expand 
-    </div>
-    </div>
-  </button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+                Expand
+</button>
+  
 </p>
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
@@ -83,7 +80,7 @@ function NotificationScreen() {
                                  Pending Invitation to join SFSU CS Club Group
    </p>
                              <p class="text-xs">
-                                 Accept/Decline
+                                 <a>Accept/Decline</a>
    </p>
                          </div>
                          <div class="text-sm text-gray-500">
@@ -145,7 +142,7 @@ function NotificationScreen() {
                                 Today: Resume Builder Workshop
       </p>
                             <p class="text-xs">
-                                J. Leonard Library @ 1:15 PM
+                                <a>J. Leonard Library @ 1:15 PM</a>
       </p>
                         </div>
                         <div class="text-sm text-gray-500">
@@ -163,7 +160,7 @@ function NotificationScreen() {
                                 Today: Microbiology Study Group
       </p>
                             <p class="text-xs">
-                                Thornton Hall 220 @ 5:00 PM
+                                <a>Thornton Hall 220 @ 5:00 PM</a>
       </p>
                         </div>
                         <div class="text-sm text-gray-500">
@@ -175,12 +172,16 @@ function NotificationScreen() {
                 
                 <p>
 
-<button class="bg-orange-500"  type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class ="rounded-lg">
-  <div class = "border-solid border-8 border-orange-500 rounded-lg">
+                
+
+  {/* <div class = "border-solid border-8 border-orange-500 rounded-lg">
     <div class ="text-orange-300">
       Click to expand 
   </div>
-  </div>
+  </div> */}
+
+<button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+                Expand
 </button>
 </p>
 <div class="collapse" id="collapseExample">
@@ -194,7 +195,7 @@ function NotificationScreen() {
                                Pending Invitation to join SFSU CS Club Group
  </p>
                            <p class="text-xs">
-                               Accept/Decline
+                           <a>Accept/Decline</a>
  </p>
                        </div>
                        <div class="text-sm text-gray-500">
