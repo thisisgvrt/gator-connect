@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
   NavLink,
-  useLocation
+  Link
 } from "react-router-dom";
 
 import './css/style.css';
@@ -56,7 +56,7 @@ function App(props) {
         */}
         <header className="navbar-purple px-2 flex flex-row justify-between items-end">
           {
-            searchText === null ? <div className="w-full flex flex-row justify-between items-end"><h4 className="logo text-4xl align-bottom leading-tight tracking-wide">GatorConnect</h4><svg fill="currentColor" className="h-10 w-10 search-logo" viewBox="0 0 20 20" onClick={() => setSearchText("")}><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" /></svg></div>
+            searchText === null ?  <div className="w-full flex flex-row justify-between items-end"><Link to={landingPagePath}><h4 className="logo text-4xl align-bottom leading-tight tracking-wide">GatorConnect</h4></Link><svg fill="currentColor" className="h-10 w-10 search-logo" viewBox="0 0 20 20" onClick={() => setSearchText("")}><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" /></svg></div>
               : <form className="w-full max-w-sm">
                 <div className="flex items-end py-1">
                   <input className="appearance-none muted-highlight-color bg-transparent border-none w-full mr-3 py-1 px-2 leading-none focus:outline-none text-xl" type="text" placeholder="Please enter enter the search text" aria-label="Search Text" onChange={e => setSearchText(e.target.value)} value={searchText} />
@@ -89,6 +89,9 @@ function App(props) {
             </Route>
             <Route path={profilePagePath}>
               <ProfilePageScreen />
+            </Route>
+            <Route path={messageScreenPath}>
+              <MessageScreen />
             </Route>
             <Route path={eventsOverviewScreenPath}>
               <EventsOverviewScreen />

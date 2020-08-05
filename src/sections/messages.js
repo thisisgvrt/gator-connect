@@ -8,6 +8,11 @@ import {
   faEllipsisV,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { Link } from "react-router-dom";
+import { paths } from '../data';
+
+const { membersWithTeamsPath } = paths;
+
 function MessageScreen() {
   return (
     <div
@@ -20,14 +25,16 @@ function MessageScreen() {
     >
       <MainContainer>
         <nav>
-          <button>
-            <FontAwesomeIcon
-              icon={faChevronLeft}
-              color="rgba(85,19,126)"
-              size="2x"
-            />
-          </button>
-          <div className="hashtag">#general</div>
+          <Link to={membersWithTeamsPath}>
+            <button>
+              <FontAwesomeIcon
+                icon={faChevronLeft}
+                color="rgba(85,19,126)"
+                size="2x"
+              />
+            </button>
+          </Link>
+          <div className="hashtag">Team 01</div>
           <button>
             <FontAwesomeIcon
               icon={faEllipsisV}
@@ -96,7 +103,7 @@ function MessageScreen() {
         </div>
       </MainContainer>
       <Footer>
-        <input type="message" placeholder="Message #general" />
+        <input type="message" placeholder="Message to Team 01" />
         <button className="btn">Send</button>
       </Footer>
     </div>
