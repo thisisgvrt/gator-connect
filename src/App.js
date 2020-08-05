@@ -13,6 +13,7 @@ import MemberScreen from './sections/members';
 import CalendarScreen from './sections/calendar';
 import MessageScreen from './sections/messages';
 import NotificationScreen from './sections/notifications';
+import EventsOverviewScreen from './sections/overview';
 
 import { paths } from './data';
 
@@ -22,6 +23,7 @@ const {
   membersWithoutTeamsPath,
   messageScreenPath,
   calendarScreenPath,
+  eventsOverviewScreenPath,
   notificationScreenPath
 } = paths;
 
@@ -73,6 +75,9 @@ function App() {
             </Route>
             <Route path={messageScreenPath}>
               <MessageScreen />
+            </Route>
+            <Route path={eventsOverviewScreenPath}>
+              <EventsOverviewScreen />
             </Route>
             <Route path={calendarScreenPath}>
               <CalendarScreen />

@@ -66,6 +66,7 @@ const paths = {
     homePagePath: "/",
     messageScreenPath: "/messages",
     calendarScreenPath: "/calendar",
+    eventsOverviewScreenPath: "/eventsOverview",
     notificationScreenPath: "/notifications",
     membersWithTeamsPath: "/membersWithTeamsPath",
     membersWithoutTeamsPath: "/membersWithoutTeamsPath"
