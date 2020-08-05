@@ -17,11 +17,10 @@ function CalendarScreen() {
             </head>
             <body>
 
-                <span class="day">03
-</span>
-                <span class="date">August 2020
-</span>
-
+            <span class="day">4 </span> <pre style={{ color : " rgba(83,35,128,1)","margin-top": "-45px","font-weight":"bold","font-size": "36px", "font-family": "roboto" }}>{`
+         August 
+          2020
+                            `}</pre>
                 <div class="YourEventsBox">
                     <div class="YourEventsBorder">
                     </div>
