@@ -23,6 +23,7 @@ require('log-timestamp');
 
   // Checking that we are navigated to Homepage with semesters and courses
   assert.strictEqual("Human Computer Interaction", firstCourseText);
+  console.log("Found expected class on the screen");
   await page.screenshot({path: 'home-page.png'});
 
   console.log("Testing Home screen, clicking the first course button")
@@ -35,6 +36,7 @@ require('log-timestamp');
   const firstMemberText = await page.evaluate(firstMember => firstMember.textContent, firstMember);
 
   assert.strictEqual("Everyone(Broadcast to all members of class)", firstMemberText);
+  console.log("Found expected broadcast button that navigates to group chat");
   await page.screenshot({path: 'Human-computer-interaction-members.png'});
 
   console.log("Testing calendar button on the bottom navbar")
@@ -47,6 +49,7 @@ require('log-timestamp');
   const dateToday = await page.$(".day");
   const dateTodayText = await page.evaluate(dateToday => dateToday.textContent, dateToday);
   assert.strictEqual("4", dateTodayText.trim());
+  console.log("Current date matches with expectation")
 
   console.log("Testing notifications button on the bottom navbar")
   // Navigating to members secreen
