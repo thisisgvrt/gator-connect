@@ -7,6 +7,14 @@
     background-color: #532380;
 }
 
+.navbar-yellow {
+  color: #FFCF06;
+}
+
+.bg-yellow{
+  background-color: #C99700;
+}
+
 body {
     font-family: "Open Sans";
 }
