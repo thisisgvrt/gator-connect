@@ -54,7 +54,7 @@ function App(props) {
         {/* 
           Header will be containing the logo.
         */}
-        <header className="navbar-purple px-2 flex flex-row justify-between items-end">
+        {!isHomePage && <header className="navbar-purple px-2 flex flex-row justify-between items-end">
           {
             searchText === null ?  <div className="w-full flex flex-row justify-between items-end"><Link to={landingPagePath}><h4 className="logo text-4xl align-bottom leading-tight tracking-wide">GatorConnect</h4></Link><svg fill="currentColor" className="h-10 w-10 search-logo" viewBox="0 0 20 20" onClick={() => setSearchText("")}><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" /></svg></div>
               : <form className="w-full max-w-sm">
@@ -66,7 +66,7 @@ function App(props) {
                 </div>
               </form>
           }
-        </header>
+        </header> }
         {/* 
           Section will contain the main content.
           the other items (header/footer) will only take the space they need to
